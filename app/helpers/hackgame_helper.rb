@@ -1,0 +1,2 @@
+module HackgameHelper
+end
