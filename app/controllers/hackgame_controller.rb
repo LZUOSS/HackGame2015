@@ -14,7 +14,7 @@ class HackgameController < ApplicationController
 			redirect_to "https://hackgame.cnbirdlink.com/hackgame/4-dsfas.html"
 			cookies[:level4_pwd] = "gongxigongxi"
 		elsif level_id == "4" && password == "gongxigongxi"
-			redirect_to "https://hackgame.cnbirdlink.com/hackgame/5.html"
+			redirect_to "https://hackgame.cnbirdlink.com/hackgame/5_ereqfdsf.html"
 		elsif level_id == "5" && password == "password" && authcode == "00001234567"
 			redirect_to "http://oss.lzu.edu.cn/2015/"
 		else
