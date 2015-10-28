@@ -22,20 +22,22 @@ class HackgameController < ApplicationController
 		elsif level_id == "7" && password == "woaini"
 			redirect_to "https://hackgame.cnbirdlink.com/hackgame/8_dfafasd.html"	
 		elsif level_id == "8" && password == "2366666"
-			redirect_to "ttps://hackgame.cnbirdlink.com/hackgame/finish_game.html"
+			redirect_to "https://hackgame.cnbirdlink.com/hackgame/finish_game.html"
 		else
 			redirect_to request.env["HTTP_REFERER"]
 		end
 	end
 	
 	def GetPassword
-		password = params[:psw]
-		if password == '23333333'
-			format.html {  }
-        	render json: {result: {true}}
-        else
-        	format.html {  }
-        	render json: {result: {false}}
+		password = params[:pwd]
+		respond_to do |format|
+			if password == '2366666'
+				format.html {  }
+        		render json: {"result": "true"}
+        	else
+        		format.html {  }
+        		render json: {"result": "false"}
+        	end
         end
 	end
 end
