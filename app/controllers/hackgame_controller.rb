@@ -1,4 +1,4 @@
-class HackgameController < ApplicationController
+class HackgameController < ApplicationController
 
 	def CheckPassword
 		level_id = params[:level]
